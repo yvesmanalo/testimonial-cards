@@ -207,6 +207,13 @@
   }
 }
 
+@media  screen and (max-width: 1440px) {
+
+  .box{
+    top:225px;
+  }
+}
+
 @media  screen and (max-width: 1024px) {
  
   .testimonial-container{
