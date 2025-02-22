@@ -200,6 +200,13 @@
   "con3 con4";
 }
 
+@media  screen and (max-width: 2560px) {
+
+  .box{
+    display: none;
+  }
+}
+
 @media  screen and (max-width: 1024px) {
  
   .testimonial-container{
