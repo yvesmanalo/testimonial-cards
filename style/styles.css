@@ -1,0 +1,278 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+
+.con1{
+  border-radius: 1em;
+  border-style: none;
+}
+
+.con2{
+  background-color: white;
+  border-radius: 1em;
+  border: 2px solid black;
+  padding: 1em;
+}
+
+.con3{
+  background-image: url(https://randomuser.me/api/portraits/women/44.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1em;
+}
+
+.con4{
+  background-color: black;
+  color: white;
+  padding:1.5em;
+  border-radius: 1em;
+}
+
+.con5{
+  border-radius: 1em;
+  border: 2px solid black;
+  padding: 2em;
+  text-align: center;
+}
+
+.black-bg-white-text{
+  background-color: black;
+  color:white;
+  overflow: hidden;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+.black-bg-white-text p{
+  margin-bottom: 1.5em;
+  line-height: 1.7em;
+  font-size: 1.1rem;
+  
+}
+
+#second-paragraph{
+  margin-bottom: 0;
+}
+
+.avatar-and-name{
+  margin-top:1.1em;
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center ;
+}
+
+.avatar-image{
+  height:80px;
+  width: 80px;
+  border-radius: 40px;
+}
+
+.info{
+  margin-left: 1em;
+}
+
+.name{
+  font-size:1.25rem;
+}
+
+.job-title{
+  font-size:0.8rem;
+}
+
+.box{
+  height:20px;
+  width: 20px;
+  background-color: black;
+  position:absolute;
+  top:165px;
+  left: 30px;
+  transform: rotateZ(45deg);
+  z-index: -1;
+}
+
+.testimony-container{
+  position: relative;
+}
+
+.con2 p{
+  margin-bottom: 1.5em;
+  line-height: 1.7em;
+  font-size: 1.1rem;
+}
+
+
+.con2 .info{
+  margin-left: 1em;
+}
+
+.con2 .info p{
+  margin: 0;
+  line-height: normal;
+}
+
+.con2 .info .name{
+  font-size:1.25rem;
+}
+
+.con2 .info .job-title{
+  font-size:0.8rem;
+}
+
+.checked{
+  color: rgba(255, 208, 0, 0.808);
+}
+
+
+.con4 .name{
+  margin-top: 0.7em;
+  font-size: 2rem;
+}
+
+#con4-testimony{
+  margin-top: 1.2em;
+  line-height: 1.7em;
+  font-size: 1.1rem;
+}
+
+.con4 .job-title{
+  color: gray;
+  margin-top: 0.3em;
+  font-size: 1.2rem;
+}
+
+.testimony-slider-text{
+  line-height: 1.7em;
+  font-size: 1.1rem;
+}
+
+.testimony-slider-image{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2.1em 0 1.2em 0;
+}
+
+.testimony-slider-name{
+  font-size: 1.1rem;
+}
+
+.avatar-current{
+  height:78px;
+  width: 78px;
+  border-radius: 39px;
+}
+
+.avatar-previous, .avatar-next{
+  height:66px;
+  width: 66px;
+  border-radius: 33px;
+  opacity: 0.5;
+  margin: 0 1.5em;
+}
+
+.arrow{
+  margin: 0 1em;
+}
+
+.testimonial-container{
+  margin: 1.5em auto;
+  max-width: 40%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "con1 con2"
+  "second-row second-row"
+  "con5 con5";
+  gap: 1em;
+}
+
+.second-row{
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  column-gap: 1em;
+  grid-template-areas:
+  "con3 con4";
+}
+
+@media  screen and (max-width: 1024px) {
+ 
+  .testimonial-container{
+    max-width:70%;
+  }
+
+  .box{
+    top:164px;
+  }
+}
+
+@media  screen and (max-width: 768px) {
+ 
+  .testimonial-container{
+    max-width:70%;
+    margin: 1.5em auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "con1"
+    "con2"
+    "second-row"
+    "con5";
+    gap: 1em;
+  }
+
+  .second-row{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 1fr;
+    row-gap: 1em;
+    grid-template-areas:
+    "con3"
+    "con4";
+  }
+
+  .box{
+    top:135px;
+  }
+}
+
+@media  screen and (max-width: 425px) {
+ 
+  .testimonial-container{
+    max-width:90%;
+    margin-left: 1.5em 0;
+    grid-template-columns: 380px;
+    grid-template-areas:
+    "con1"
+    "con2"
+    "second-row"
+    "con5";
+    gap: 1em;
+  }
+
+  .second-row{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 1fr;
+    row-gap: 1em;
+    grid-template-areas:
+    "con3"
+    "con4";
+  }
+
+  .box{
+    top:165px;
+  }
+
+  .avatar-previous, .avatar-next{
+    height:66px;
+    width: 66px;
+    border-radius: 33px;
+    opacity: 0.5;
+    margin: 0 0.5em;
+  }
+}
