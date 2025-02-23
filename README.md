@@ -7,7 +7,7 @@ This project contains the following file(s) and folder:
 - **styles folder** - This folder contains styles.css for the design of the cards
   
 ## Preview
-Here's the [preview](https://yvesmanalo.github.io/testimonial-cards/) of how the CV looks like.
+Here's the [preview](https://yvesmanalo.github.io/testimonial-cards/) of how the testimonial-cards looks like.
 
 ## Project Details:
 This project was built based on the [project details](https://roadmap.sh/projects/testimonial-cards) provided by [roadmap.sh](https://roadmap.sh/).
